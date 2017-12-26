@@ -12,8 +12,8 @@ https://dineshkasle.github.io/searchbox/
 
 # Screenshots
 
-1. Desktop
+1. Desktop View
 https://github.com/dineshkasle/searchbox/blob/gh-pages/img/index.png
 
-2. Mobile
+2. Mobile View
 https://github.com/dineshkasle/searchbox/blob/gh-pages/img/screen_mob.png
