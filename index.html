@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Search box [Pure CSS]</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+  	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Antic'>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div align="center">
+  <br>
+  <br>
+  <br>
+  <div class="text">Simple search Engine</div>
+  <br>
+  <br>
+  <br>
+  <div class="ui-widget">
+  <input class="dk form-control button" type="text" placeholder="Search here ...." id="tags">
+</div>
+  <script src='https://use.edgefonts.net/amaranth.js'></script>
+
+  
+ <script>
+ 	
+	$(document).ready(function(){
+var mydta=[];
+	$('.dk').keyup(function(e) {
+		
+    var dinn = $('#tags').val();
+		$.getJSON('https://www.pixaat.com/api/styles/ac?q='+dinn+'&t=ht', function(data) {
+		$( "#tags" ).autocomplete({source: data.s.HT});
+			console.log(data.s.HT);
+    });
+         
+   
+    });
+	
+	});
+
+	
+  </script>
+</body>
+
+</html>
